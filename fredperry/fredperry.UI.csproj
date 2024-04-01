@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>aspnet-fredperry-d2f844e0-5fe2-434c-9b26-8ad59bf999d3</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="prettier.config.js" />
+  </ItemGroup>
+
+    <ItemGroup>
+      <UpToDateCheckBuilt Include="wwwroot/css/site.css" Set="Css" />
+      <UpToDateCheckBuilt Include="tailwind.config.js" Set="Css" />
+    </ItemGroup>
+
+    <Target Name="Tailwind" BeforeTargets="Build">
+      <Exec Command="npm run css:build"/>
+    </Target>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\fredperry.Core\fredperry.Core.csproj" />
+    <ProjectReference Include="..\fredperry.Infrastructure\fredperry.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

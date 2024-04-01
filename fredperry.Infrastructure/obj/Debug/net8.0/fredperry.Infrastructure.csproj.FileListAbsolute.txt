@@ -1,0 +1,16 @@
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\bin\Debug\net8.0\fredperry.Infrastructure.deps.json
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\bin\Debug\net8.0\fredperry.Infrastructure.dll
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\bin\Debug\net8.0\fredperry.Infrastructure.pdb
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\bin\Debug\net8.0\fredperry.Core.dll
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\bin\Debug\net8.0\fredperry.Core.pdb
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\fredperry.Infrastructure.csproj.AssemblyReference.cache
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\fredperry.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\fredperry.Infrastructure.AssemblyInfoInputs.cache
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\fredperry.Infrastructure.AssemblyInfo.cs
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\fredperry.Infrastructure.csproj.CoreCompileInputs.cache
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\fredperry.Infrastructure.sourcelink.json
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\fredperr.E1FCAC0D.Up2Date
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\fredperry.Infrastructure.dll
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\refint\fredperry.Infrastructure.dll
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\fredperry.Infrastructure.pdb
+D:\repos\ducmt_nashintern\fredperry.Infrastructure\obj\Debug\net8.0\ref\fredperry.Infrastructure.dll

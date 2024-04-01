@@ -1,0 +1,104 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<style>
+    /* Set height of the page */
+    html, body {
+        height: 100%;
+    }
+
+    /* Styles for the transparent header */
+    .transparent-header {
+        background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+        backdrop-filter: blur(1px); /* Apply blur effect to the background */
+        position: fixed; /* Fixed position to stay at the top */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10; /* Ensure it appears above other content */
+        transition: background-color 0.3s ease; /* Smooth transition for color change */
+    }
+
+    /* Additional styles to adjust content positioning */
+    .main-content {
+        margin-top: 80px; /* Adjust based on the height of the transparent header */
+        padding: 20px;
+    }
+
+    .full-screen-element {
+        width: 100%;
+        height: 100%;
+    }
+
+</style>
+
+@* <div class="bg-fixed bg-cover bg-center" style="background-image: url(https://www.fredperry.com/media/widget/cache/H/E/151eb6247b24739ee1d8ae1bc58462b8/media/wysiwyg/2024/Q1/hp/HERO-1303-DESKTOP.jpg)">
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
+
+</div> *@
+
+@* <header class="transparent-header h-16 flex justify-center items-center">
+    <h1 class="text-2xl font-bold text-gray-800">Your Logo or Site Name</h1>
+</header>  *@  
+
+    <!-- Background image container -->
+<div class="bg-fixed bg-cover bg-cente h-screen" style="background-image: url('https://www.fredperry.com/media/widget/cache/H/E/151eb6247b24739ee1d8ae1bc58462b8/media/wysiwyg/2024/Q1/hp/HERO-1303-DESKTOP.jpg');">
+        <!-- Content container with scrolling -->
+
+        <!-- Full-screen div -->
+    <!-- Content container with scrolling -->
+    <div class="flex flex-col justify-between h-full">
+        <!-- Full-screen clickable area for redirection -->
+        <a href="https://www.fredperry.com" class="w-full h-full flex justify-center items-center">
+            <span class="text-white text-lg font-semibold mb-8">Click anywhere to redirect</span>
+        </a>
+        <!-- Main content -->
+        <div class="flex flex-col justify-end items-center">
+            <!-- Your main content here -->
+            <!-- For example, buttons -->
+            <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4" href="https://www.fredperry.com/shop-finder">
+                Click to redirect
+            </a>
+            <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="https://www.fredperry.com/shop-finder">
+                Click to redirect
+            </a>
+        </div>
+    </div>
+
+
+
+
+</div>
+        <div class="">
+            <!-- Content -->
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h1 class="text-3xl font-bold mb-4">Welcome to Tailwind CSS!</h1>
+                <p class="text-lg text-gray-700">Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.</p>
+                <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</button>
+            </div>
+
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h1 class="text-3xl font-bold mb-4">Welcome to Tailwind CSS!</h1>
+                <p class="text-lg text-gray-700">Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.</p>
+                <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</button>
+            </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold mb-4">Welcome to Tailwind CSS!</h1>
+            <p class="text-lg text-gray-700">Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</button>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold mb-4">Welcome to Tailwind CSS!</h1>
+            <p class="text-lg text-gray-700">Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</button>
+        </div>
+        </div>
+    
+
+

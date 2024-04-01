@@ -1,0 +1,13 @@
+D:\repos\ducmt_nashintern\fredperry.Core\bin\Debug\net8.0\fredperry.Core.deps.json
+D:\repos\ducmt_nashintern\fredperry.Core\bin\Debug\net8.0\fredperry.Core.dll
+D:\repos\ducmt_nashintern\fredperry.Core\bin\Debug\net8.0\fredperry.Core.pdb
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\fredperry.Core.csproj.AssemblyReference.cache
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\fredperry.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\fredperry.Core.AssemblyInfoInputs.cache
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\fredperry.Core.AssemblyInfo.cs
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\fredperry.Core.csproj.CoreCompileInputs.cache
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\fredperry.Core.sourcelink.json
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\fredperry.Core.dll
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\refint\fredperry.Core.dll
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\fredperry.Core.pdb
+D:\repos\ducmt_nashintern\fredperry.Core\obj\Debug\net8.0\ref\fredperry.Core.dll
