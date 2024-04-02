@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -22,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 289,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tailwind.config.js",
+              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\tailwind.config.js",
+              "RelativeDocumentMoniker": "tailwind.config.js",
+              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\tailwind.config.js",
+              "RelativeToolTip": "tailwind.config.js",
+              "ViewState": "AQIAAAMAAAAAAAAAAADwvwkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-02T05:10:45.367Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -32,7 +49,7 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAADwvywAAAAQAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAswC0AAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-01T17:13:14.384Z",
               "EditorCaption": ""
@@ -45,14 +62,14 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAADEAAAAAAAAAAAAIwDgAAABhAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-04-01T17:08:34.72Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",

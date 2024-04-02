@@ -8,6 +8,7 @@
     @* <link href="./output.css" rel="stylesheet"> *@
 
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
+
 </head>
 <body>
     @* <header>
@@ -32,20 +33,34 @@
             </div>
         </nav>
     </header> *@
-    <div class="container">
+
+
+    <header class="bg-transparent h-16 flex justify-center items-center">
+        <h1 class="text-2xl font-bold text-gray-800">Your Logo or Site Name</h1>
+    </header>
+
+    <div class="container mx-0 h32 flex justify-center items-center min-w-fit">
+        <h1 class="text-2xl font-bold text-gray-800">SAY SOMETHING</h1>
+    </div>
+
+    <div class="container mx-0 w-full max-w-full">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
-    @* <footer class="border-top footer text-muted">
+    <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2024 - fredperry - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </footer> *@
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    </footer>
+
+
+
+
+    @* <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script> *@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
