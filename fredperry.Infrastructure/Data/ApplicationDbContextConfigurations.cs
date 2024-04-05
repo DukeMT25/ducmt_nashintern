@@ -22,17 +22,28 @@ namespace fredperry.Infrastructure.Data
         public static void SeedData(ModelBuilder modelBuilder)
         {
             // Add any seed data here
+            modelBuilder.Entity<Category>().HasData(
+                new Category { Id = 1, Name = "Man" },
+                new Category { Id = 2, Name = "Women" },
+                new Category { Id = 3, Name = "The Fred Perry Shirt" }
+            );
+
             modelBuilder.Entity<Product>().HasData(
-                new Product { Id = 1, Code = "P001", Name = "Product 1", Price = 9.99f, IsActive = true },
-                new Product { Id = 2, Code = "P002", Name = "Product 2", Price = 12.00f, IsActive = true },
-                new Product { Id = 3, Code = "P003", Name = "Product 3", Price = 13.00f, IsActive = true },
-                new Product { Id = 4, Code = "P004", Name = "Product 4", Price = 14.00f, IsActive = true },
-                new Product { Id = 5, Code = "P005", Name = "Product 5", Price = 15.00f, IsActive = true },
-                new Product { Id = 6, Code = "P006", Name = "Product 6", Price = 16.00f, IsActive = true },
-                new Product { Id = 7, Code = "P007", Name = "Product 7", Price = 17.00f, IsActive = true },
-                new Product { Id = 8, Code = "P008", Name = "Product 8", Price = 18.00f, IsActive = true },
-                new Product { Id = 9, Code = "P009", Name = "Product 9", Price = 19.00f, IsActive = true },
-                new Product { Id = 10, Code = "P010", Name = "Product 10", Price = 19.99f, IsActive = true }
+                new Product { Id = 1, Code = "P001", Name = "Men's Polo Shirt", Price = 29.99f, IsActive = true, IsNewRelease = true },
+                new Product { Id = 2, Code = "P002", Name = "Women's Polo Shirt", Price = 29.99f, IsActive = true, IsNewRelease = true },
+                new Product { Id = 3, Code = "P003", Name = "Fred Perry Classic Shirt", Price = 39.99f, IsActive = true, IsNewRelease = true }
+            );
+
+            modelBuilder.Entity<ProductCategory>().HasData(
+                new ProductCategory { Id = 1, ProductId = 1, CategoryId = 1 },
+                new ProductCategory { Id = 2, ProductId = 1, CategoryId = 3 },
+
+                new ProductCategory { Id = 3, ProductId = 2, CategoryId = 2 },
+                new ProductCategory { Id = 4, ProductId = 2, CategoryId = 3 },
+
+                new ProductCategory { Id = 5, ProductId = 3, CategoryId = 1 },
+                new ProductCategory { Id = 6, ProductId = 3, CategoryId = 2 },
+                new ProductCategory { Id = 7, ProductId = 3, CategoryId = 3 }
             );
 
         }

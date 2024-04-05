@@ -1,0 +1,27 @@
+﻿@model fredperry.Core.Entities.Business.CategoryViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-white shadow-md rounded-lg overflow-hidden">
+    <div class="bg-gray-100 px-4 py-2">
+        <h2 class="text-lg font-semibold text-gray-800">Edit Category</h2>
+    </div>
+
+    <div class="p-4">
+        <form asp-action="Edit" asp-route-id="@Model.Id" method="post" class="space-y-4">
+            <div>
+                <label asp-for="Name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input asp-for="Name" type="text" placeholder="Category name" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="Name" class="text-red-600"></span>
+            </div>
+
+            <div class="flex justify-end">
+                <button type="submit" class="btn btn-primary mr-2">Save</button>
+                <a asp-action="Index" class="btn btn-neutral">Back</a>    
+            </div>
+        </form>
+    </div>
+</div>

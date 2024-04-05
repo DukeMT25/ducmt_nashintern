@@ -1,0 +1,87 @@
+﻿@model CategoryDeleteConfirmationViewModel
+
+@{
+    ViewData["Title"] = "Delete Category";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="p-4">
+    <h2 class="text-2xl font-bold mb-4">Delete Confirmation for: @Model.Category.Name</h2>
+
+    @if (Model.Products.Any())
+    {
+        <form asp-action="Delete" method="post" class="mb-4 flex-grow">
+        <input type="hidden" for="categoryId" name="categoryId" id="categoryId" value="@Model.Category.Id"/>
+
+            <div class="mb-4">
+                <label for="newCategoryId" class="block text-sm font-medium text-gray-700">Choose New Category:</label>
+                <div class="mt-1 mr-2">
+                    <select name="newCategoryId" id="newCategoryId" class="w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
+                        <option value="">--Select New Category--</option>
+                        @foreach (var category in Model.Categories)
+                        {
+                            <option value="@category.Id">@category.Name</option>
+                        }
+                    </select>
+                </div>
+            </div>
+        
+            <div class="flex items-center">
+                <button type="submit" class="btn btn-primary mr-2">Delete Category</button>
+                <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
+
+
+            
+                <div class="mb-8">
+                    <p class="font-bold">The following products are associated with this category:</p>
+                    <div class="overflow-x-auto">
+                        <table class="table w-full mt-4">
+                            <thead>
+                                <tr>
+                                    <th class="px-4 py-2">Product Name</th>
+                                    <th class="px-4 py-2">Current Categories</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var product in Model.Products)
+                                {
+                                    <tr>
+                                        <td class="border px-4 py-2">@product.Name</td>
+                                        <td class="border px-4 py-2">
+                                            <div class="flex flex-wrap">
+                                                @for (int i = 0; i < Model.Categories.Count(); i += 4)
+                                                {
+                                                    <div class="flex mb-2">
+                                                        @foreach (var category in Model.Categories.Skip(i).Take(4))
+                                                        {
+                                                            <span class="border rounded-full border-accent px-4 py-2 mb-2 mr-2 text-center">@category.Name</span>
+                                                        }
+                                                    </div>
+                                                }
+                                            </div>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                
+    }
+    else
+        {
+            <div class="mt-4">
+                <p class="font-bold">There are no products associated with this category. It is safe to delete.</p>
+                <form method="post" asp-action="SafeDelete">
+                    <input type="hidden" id="id" name="id" value="@Model.Category.Id" />
+                    <button type="submit" class="btn btn-primary mt-4 mr-2">Delete Category</button>
+                    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+                </form>
+            </div>
+        }
+
+    }
+</div>

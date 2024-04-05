@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fredperry.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+416ae399a9f6cd78c78abafde39da9c6b3e36922")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+845672f73fce41609ddb6db9523dd1a722637172")]
 [assembly: System.Reflection.AssemblyProductAttribute("fredperry.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fredperry.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

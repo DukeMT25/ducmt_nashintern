@@ -90,5 +90,22 @@ namespace fredperry.Core.Services
             await _productRepository.Delete(entity);
         }
 
+        public async Task<IEnumerable<ProductViewModel>> Search(string searchTerm)
+        {
+            var products = await _productRepository.Search(searchTerm);
+            return _productViewModelMapper.MapList(products);
+        }
+
+
+        public async Task<IEnumerable<ProductViewModel>> GetProductsByIds(IEnumerable<int> productIds)
+        {
+            var products = new List<ProductViewModel>();
+            foreach (var productId in productIds)
+            {
+                var product = await GetProduct(productId);
+                products.Add(product);
+            }
+            return products;
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using fredperry.Core.Entities.General;
 using fredperry.Core.Interfaces.IRepositories;
-using fredperry.Data;
+using fredperry.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,5 +16,9 @@ namespace fredperry.Infrastructure.Repositories
         {
         }
 
+        public async Task<IEnumerable<Product>> Search(string searchTerm)
+        {
+            return await _dbContext.Products.Where(p => p.Code.Contains(searchTerm) || p.Name.Contains(searchTerm)).ToListAsync();
+        }
     }
 }

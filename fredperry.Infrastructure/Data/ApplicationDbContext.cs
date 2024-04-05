@@ -3,7 +3,7 @@ using fredperry.Infrastructure.Data;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace fredperry.Data
+namespace fredperry.Infrastructure.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {
@@ -13,6 +13,8 @@ namespace fredperry.Data
 
         #region DbSet Section
         public DbSet<Product> Products { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
 
         #endregion
 

@@ -16,11 +16,15 @@ namespace fredperry.UI.Extensions
         {
             #region Services
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductCategoryService, ProductCategoryService>();
 
             #endregion
 
             #region Repositories
             services.AddTransient<IProductRepository, ProductRepository>();
+            services.AddTransient<ICategoryRepository, CategoryRepository>();
+            services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
 
             #endregion
 
@@ -29,6 +33,10 @@ namespace fredperry.UI.Extensions
             {
                 cfg.CreateMap<Product, ProductViewModel>();
                 cfg.CreateMap<ProductViewModel, Product>();
+
+                cfg.CreateMap<Category, CategoryViewModel>();
+                cfg.CreateMap<CategoryViewModel, Category>();
+
             });
 
             IMapper mapper = configuration.CreateMapper();
@@ -36,6 +44,9 @@ namespace fredperry.UI.Extensions
             // Register the IMapperService implementation with your dependency injection container
             services.AddSingleton<IBaseMapper<Product, ProductViewModel>>(new BaseMapper<Product, ProductViewModel>(mapper));
             services.AddSingleton<IBaseMapper<ProductViewModel, Product>>(new BaseMapper<ProductViewModel, Product>(mapper));
+
+            services.AddSingleton<IBaseMapper<Category, CategoryViewModel>>(new BaseMapper<Category, CategoryViewModel>(mapper));
+            services.AddSingleton<IBaseMapper<CategoryViewModel, Category>>(new BaseMapper<CategoryViewModel, Category>(mapper));
 
             #endregion
 

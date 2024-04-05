@@ -3,20 +3,22 @@
   "WorkspaceRootPath": "D:\\repos\\ducmt_nashintern\\fredperry\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:tailwind.config.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2E1CA6F-B0B7-4497-BDB9-02FC172DA34B}|..\\fredperry.Infrastructure\\fredperry.Infrastructure.csproj|d:\\repos\\ducmt_nashintern\\fredperry.infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2E1CA6F-B0B7-4497-BDB9-02FC172DA34B}|..\\fredperry.Infrastructure\\fredperry.Infrastructure.csproj|d:\\repos\\ducmt_nashintern\\fredperry.infrastructure\\data\\applicationdbcontextconfigurations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,54 +32,67 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "tailwind.config.js",
-              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\tailwind.config.js",
-              "RelativeDocumentMoniker": "tailwind.config.js",
-              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\tailwind.config.js",
-              "RelativeToolTip": "tailwind.config.js",
-              "ViewState": "AQIAAAMAAAAAAAAAAADwvwkAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-04-02T05:10:45.367Z",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAQwHkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:39:56.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAswC0AAAAwAAAA",
+              "DocumentIndex": 2,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T17:13:14.384Z",
+              "WhenOpened": "2024-04-05T17:39:54.459Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-01T17:08:34.72Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:36:22.561Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContextConfigurations.cs",
+              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry.Infrastructure\\Data\\ApplicationDbContextConfigurations.cs",
+              "RelativeDocumentMoniker": "..\\fredperry.Infrastructure\\Data\\ApplicationDbContextConfigurations.cs",
+              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry.Infrastructure\\Data\\ApplicationDbContextConfigurations.cs",
+              "RelativeToolTip": "..\\fredperry.Infrastructure\\Data\\ApplicationDbContextConfigurations.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T17:34:55.144Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\fredperry.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry.Infrastructure\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\fredperry.Infrastructure\\Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-01T17:08:31.212Z",
+              "WhenOpened": "2024-04-05T17:34:49.179Z",
               "EditorCaption": ""
             }
           ]

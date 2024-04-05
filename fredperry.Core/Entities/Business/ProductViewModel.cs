@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -19,5 +20,10 @@ namespace fredperry.Core.Entities.Business
         [StringLength(maximumLength: 350)]
         public string? Description { get; set; }
         public bool IsActive { get; set; }
+        public bool IsNewRelease { get; set; }
+
+        // Property to hold the categories associated with the product
+        public List<SelectListItem>? Categories { get; set; }
+        public List<int>? SelectedCategoryIds { get; set; }
     }
 }

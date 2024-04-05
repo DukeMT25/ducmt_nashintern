@@ -1,7 +1,7 @@
 ﻿using fredperry.Core.Entities.Business;
 using fredperry.Core.Exceptions;
 using fredperry.Core.Interfaces.IRepositories;
-using fredperry.Data;
+using fredperry.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -14,7 +14,7 @@ namespace fredperry.Infrastructure.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
-        private readonly ApplicationDbContext _dbContext;
+        protected readonly ApplicationDbContext _dbContext;
         protected DbSet<T> DbSet => _dbContext.Set<T>();
 
         public BaseRepository(ApplicationDbContext dbContext)
@@ -100,6 +100,5 @@ namespace fredperry.Infrastructure.Repositories
         {
             await _dbContext.SaveChangesAsync();
         }
-
     }
 }

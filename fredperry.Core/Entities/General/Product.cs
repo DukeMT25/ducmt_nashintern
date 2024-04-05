@@ -20,5 +20,8 @@ namespace fredperry.Core.Entities.General
         [StringLength(maximumLength: 350)]
         public string? Description { get; set; }
         public bool IsActive { get; set; }
+        public bool IsNewRelease { get; set; }
+
+        public ICollection<ProductCategory> ProductCategories { get; set; }
     }
 }

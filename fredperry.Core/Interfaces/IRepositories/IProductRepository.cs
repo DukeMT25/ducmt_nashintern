@@ -9,5 +9,7 @@ namespace fredperry.Core.Interfaces.IRepositories
 {
     public interface IProductRepository : IBaseRepository<Product>
     {
+        Task<IEnumerable<Product>> Search(string searchTerm);
+
     }
 }

@@ -1,0 +1,69 @@
+﻿@model ProductViewModel
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-white shadow-md rounded-lg overflow-hidden">
+    <div class="bg-gray-100 px-4 py-2">
+        <h2 class="text-lg font-semibold text-gray-800">New Product</h2>
+    </div>
+
+    <div class="p-4">
+        <form asp-action="Create" class="space-y-4">
+            <div>
+                <label asp-for="Code" class="block text-sm font-medium text-gray-700">Code</label>
+                <input asp-for="Code" type="text" placeholder="Product code" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="Code" class="text-red-600"></span>
+            </div>
+
+            <div>
+                <label asp-for="Name" class="block text-sm font-medium text-gray-700">Name</label>
+                <input asp-for="Name" type="text" placeholder="Product name" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="Name" class="text-red-600"></span>
+            </div>
+
+            <div>
+                <label asp-for="Price" class="block text-sm font-medium text-gray-700">Price</label>
+                <input asp-for="Price" type="number" step="0.01" placeholder="70" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="Price" class="text-red-600"></span>
+            </div>
+
+            <div>
+                <label asp-for="Description" class="block text-sm font-medium text-gray-700">Description</label>
+                <textarea asp-for="Description" class="textarea textarea-primary w-full" placeholder="Description"></textarea>
+                <span asp-validation-for="Description" class="text-red-600"></span>
+            </div>
+
+            <div class="flex items-center">
+                <input asp-for="IsActive" type="checkbox" class="checkbox checkbox-primary" />
+                <label for="isActive" class="ml-2 block text-sm text-gray-900">Active</label>
+            </div>
+            <span asp-validation-for="IsActive" class="text-red-600"></span>
+
+            <div class="flex items-center">
+                <input asp-for="IsNewRelease" type="checkbox" class="checkbox checkbox-primary" />
+                <label for="isNewRelease" class="ml-2 block text-sm text-gray-900">New Release</label>
+            </div>
+            <span asp-validation-for="IsNewRelease" class="text-red-600"></span>
+
+            @{
+                var categoriesCount = Model.Categories.Count();
+                var selectHeight = categoriesCount > 2 ? "h-auto" : ""; // Adjust height based on number of categories
+            }
+
+            <div class="mb-6">
+                <label asp-for="SelectedCategoryIds" class="block text-gray-700 font-bold mb-2">Categories</label>
+                <select asp-for="SelectedCategoryIds" asp-items="@Model.Categories"
+                        class="form-multiselect block select select-primary w-full @selectHeight" multiple></select>
+                <span asp-validation-for="SelectedCategoryIds" class="text-red-500"></span>
+            </div>
+
+            <div class="flex justify-end">
+                <button type="submit" class="btn btn-primary  mr-2">Create</button>
+                <a asp-action="Index" class="btn btn-neutral">Back</a>           
+            </div>
+        </form>
+    </div>
+</div>

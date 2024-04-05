@@ -18,5 +18,8 @@ namespace fredperry.Core.Interfaces.IServices
         Task<ProductViewModel> Create(ProductViewModel model);
         Task Update(ProductViewModel model);
         Task Delete(int id);
+        Task<IEnumerable<ProductViewModel>> Search(string searchItem);
+
+        Task<IEnumerable<ProductViewModel>> GetProductsByIds(IEnumerable<int> ids);
     }
 }
