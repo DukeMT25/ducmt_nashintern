@@ -1,5 +1,6 @@
 ﻿using fredperry.Core.Entities.General;
 using fredperry.Infrastructure.Data;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,6 +16,9 @@ namespace fredperry.Infrastructure.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
+
+        public DbSet<IdentityUser> IdetityUsers { get; set; }
+        public DbSet<IdentityRole> IdentityRoles { get; set; }
 
         #endregion
 

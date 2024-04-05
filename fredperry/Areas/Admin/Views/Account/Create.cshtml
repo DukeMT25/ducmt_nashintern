@@ -1,0 +1,45 @@
+﻿@model CreateAccountViewModel
+
+@{
+    ViewData["Title"] = "Create Account";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-white shadow-md rounded-lg overflow-hidden h-screen">
+    <div class="bg-gray-100 px-4 py-2">
+        <h2 class="text-lg font-semibold text-gray-800">New Account</h2>
+    </div>
+
+    <div class="p-4">
+        <form asp-action="Create" class="space-y-4">
+            <div>
+                <label asp-for="UserName" class="block text-sm font-medium text-gray-700">Username</label>
+                <input asp-for="UserName" type="text" placeholder="Username" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="UserName" class="text-red-600"></span>
+            </div>
+
+            <div>
+                <label asp-for="Email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input asp-for="Email" type="email" placeholder="Email" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="Email" class="text-red-600"></span>
+            </div>
+
+            <div>
+                <label asp-for="Password" class="block text-sm font-medium text-gray-700">Password</label>
+                <input asp-for="Password" type="password" placeholder="Password" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="Password" class="text-red-600"></span>
+            </div>
+
+            <div>
+                <label asp-for="ConfirmPassword" class="block text-sm font-medium text-gray-700">Confirm Password</label>
+                <input asp-for="ConfirmPassword" type="password" placeholder="Confirm Password" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="ConfirmPassword" class="text-red-600"></span>
+            </div>
+
+            <div class="flex justify-end">
+                <button type="submit" class="btn btn-primary mr-2">Create</button>
+                <a asp-action="Index" class="btn btn-neutral">Back</a>
+            </div>
+        </form>
+    </div>
+</div>

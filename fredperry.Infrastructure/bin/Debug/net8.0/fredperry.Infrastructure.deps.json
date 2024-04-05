@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.3",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.3",
+          "Microsoft.SqlServer.Server": "1.0.0",
           "fredperry.Core": "1.0.0"
         },
         "runtime": {

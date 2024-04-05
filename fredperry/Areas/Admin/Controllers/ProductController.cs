@@ -24,6 +24,13 @@ namespace fredperry.UI.Areas.Admin.Controllers
             _productCategoryService = productCategoryService;
         }
 
+        public async Task<IActionResult> Search(string searchTerm)
+        {
+            var products = await _productService.Search(searchTerm);
+            return View(products);
+        }
+
+
         // GET: ProductController
         public async Task<IActionResult> Index(int? page)
         {
@@ -49,7 +56,6 @@ namespace fredperry.UI.Areas.Admin.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-
 
         public async Task<IActionResult> Details(int id)
         {

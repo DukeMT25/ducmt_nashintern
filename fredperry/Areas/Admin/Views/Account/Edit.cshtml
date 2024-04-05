@@ -1,0 +1,51 @@
+﻿@model EditAccountViewModel
+
+@{
+    ViewData["Title"] = "Edit Account";
+    // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="bg-white shadow-md rounded-lg overflow-hidden h-screen">
+    <div class="bg-gray-100 px-4 py-2">
+        <h2 class="text-lg font-semibold text-gray-800">Edit Account</h2>
+    </div>
+
+    <div class="p-4">
+        <form asp-action="Edit" method="post" class="space-y-4">
+            <input type="hidden" asp-for="UserId" />
+
+            <div>
+                <label asp-for="UserName" class="block text-sm font-medium text-gray-700">User Name</label>
+                <input asp-for="UserName" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="UserName" class="text-red-600"></span>
+            </div>
+
+            <div>
+                <label asp-for="Email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input asp-for="Email" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="Email" class="text-red-600"></span>
+            </div>
+
+            <div>
+                <input type="hidden" asp-for="CurrentRole" />
+                <label class="block text-sm font-medium text-gray-700">Current Role</label>
+                <div>@Model.CurrentRole</div>
+            </div>
+
+
+            <div class="mb-6">
+                <label asp-for="SelectedRole" class="block text-gray-700 font-bold mb-2">Select Role</label>
+                <select asp-for="SelectedRole" asp-items="@Model.AllRoles.Select(r => new SelectListItem { Text = r, Value = r })"
+                        class="form-select block select select-primary w-full">
+                    <option value="">-- Select Role --</option>
+                </select>
+                <span asp-validation-for="SelectedRole" class="text-red-500"></span>
+            </div>
+
+            <div class="flex justify-end">
+                <button type="submit" class="btn btn-primary mr-2">Save</button>
+                <a asp-action="Index" class="btn btn-neutral">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>

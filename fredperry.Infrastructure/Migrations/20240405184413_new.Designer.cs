@@ -9,11 +9,11 @@ using fredperry.Infrastructure.Data;
 
 #nullable disable
 
-namespace fredperry.Infrastructure.Data.Migrations
+namespace fredperry.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240404041310_test1")]
-    partial class test1
+    [Migration("20240405184413_new")]
+    partial class @new
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -50,6 +50,20 @@ namespace fredperry.Infrastructure.Data.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("Roles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            Name = "Administrator",
+                            NormalizedName = "Administrator"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            Name = "Customer",
+                            NormalizedName = "Customer"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -140,6 +154,98 @@ namespace fredperry.Infrastructure.Data.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("Users", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "1",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "52ddea1a-d033-4bea-a38c-e42d91165537",
+                            Email = "admin1@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedUserName = "admin1@gmail.com",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFU5aJmpYd4nMhmUwjXTperNRoczbHqVJAdaD1SYRajz/gNro5ErEh3VRugHeVCIVw==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "66374e07-6832-4fd0-8111-f50ae64827f2",
+                            TwoFactorEnabled = false,
+                            UserName = "admin1"
+                        },
+                        new
+                        {
+                            Id = "2",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "65269bab-ea80-444d-bf49-b0f5f684667d",
+                            Email = "admin2@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedUserName = "admin2@gmail.com",
+                            PasswordHash = "AQAAAAIAAYagAAAAEA+C73LbLAuNuL38i6LfJN6zdhZDT2XEWydTJ+WZvZboPBvr79+C9aQGmCJ6Ix6+Ww==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "b3bcafd2-5f89-4f53-bb44-021845479502",
+                            TwoFactorEnabled = false,
+                            UserName = "admin2"
+                        },
+                        new
+                        {
+                            Id = "3",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "89e0f3aa-d11a-41df-923b-1d72148064b7",
+                            Email = "admin3@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedUserName = "admin3@gmail.com",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFbKAEBG5hfk4pm/vi90N4c+S9QXGHkKvcTuJMGWv9V25EXixbvysoPcq0wGx3UhzQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "bc9630e8-c3f2-43af-b31a-8fc1f27775fa",
+                            TwoFactorEnabled = false,
+                            UserName = "admin3"
+                        },
+                        new
+                        {
+                            Id = "4",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "a8533f6b-9fa5-4c73-9a36-814022afecb2",
+                            Email = "customer1@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedUserName = "customer1@gmail.com",
+                            PasswordHash = "AQAAAAIAAYagAAAAEENXVTicOxEU8EXMijBmyskTTP8PXFWCtv4cvRE8SJ9WHoSbN8E88lgLf9EyQU0r0A==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "cb5fb184-da77-49c7-b263-3204ca98938e",
+                            TwoFactorEnabled = false,
+                            UserName = "customer1"
+                        },
+                        new
+                        {
+                            Id = "5",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "59a20c3e-1732-4dcb-9248-ae8525612915",
+                            Email = "customer2@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedUserName = "customer2@gmail.com",
+                            PasswordHash = "AQAAAAIAAYagAAAAECZJLaaL6zsQB3ruP06wG+XCV4gyIcF0uNjPmyGcqZySTOGEQ72S8sXsqZczak6COQ==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "4bd61e3b-f15d-4f41-ad3f-d62245d787dc",
+                            TwoFactorEnabled = false,
+                            UserName = "customer2"
+                        },
+                        new
+                        {
+                            Id = "6",
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "5cac3921-d449-463e-996b-efa867b141de",
+                            Email = "customer3@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedUserName = "customer3@gmail.com",
+                            PasswordHash = "AQAAAAIAAYagAAAAECDWbXuQaXAv5lYZabVGb2i9J1EAaxt+d1EOBhSGzhLtgZGhfXw0YErrpXV/0eBo4Q==",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "abb06350-2d3d-4bde-900f-9014d8cfae7f",
+                            TwoFactorEnabled = false,
+                            UserName = "customer3"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -170,10 +276,12 @@ namespace fredperry.Infrastructure.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderKey")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -202,6 +310,38 @@ namespace fredperry.Infrastructure.Data.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = "1",
+                            RoleId = "1"
+                        },
+                        new
+                        {
+                            UserId = "2",
+                            RoleId = "1"
+                        },
+                        new
+                        {
+                            UserId = "3",
+                            RoleId = "1"
+                        },
+                        new
+                        {
+                            UserId = "4",
+                            RoleId = "2"
+                        },
+                        new
+                        {
+                            UserId = "5",
+                            RoleId = "2"
+                        },
+                        new
+                        {
+                            UserId = "6",
+                            RoleId = "2"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
@@ -210,10 +350,12 @@ namespace fredperry.Infrastructure.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("Name")
-                        .HasColumnType("nvarchar(450)");
+                        .HasMaxLength(128)
+                        .HasColumnType("nvarchar(128)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");

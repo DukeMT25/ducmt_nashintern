@@ -1,0 +1,116 @@
+﻿@model IPagedList<ProductViewModel>
+
+@{
+    ViewData["Title"] = "Search Results";
+            // Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="overflow-x-auto h-screen">
+    <div class="bg-gray-200 px-4 py-2 flex justify-between items-center">
+        <h2 class="text-xl text-gray-600">Search Results</h2>
+        <div class="relative flex">
+            <input id="searchInput" type="text" placeholder="Search products..." class="flex-1 mr-2 pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none" value="@ViewBag.SearchTerm">
+            <button onclick="searchProducts()" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Search</button>
+            <svg class="absolute left-3 top-3 h-5 w-5 text-gray-400 hidden md:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m4-5a8 8 0 11-16 0 8 8 0 0116 0z"></path>
+            </svg>
+        </div>
+
+
+        <a asp-action="Create" class="btn btn-outline btn-success"> Create New</a>
+    </div>
+    <div class="bg-white shadow-md rounded my-6">
+        <table class="min-w-max w-full table-auto">
+            <thead>
+                <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                    <th class="py-3 px-6 text-left">Code</th>
+                    <th class="py-3 px-6 text-left">Name</th>
+                    <th class="py-3 px-6 text-left">Price</th>
+                    <th class="py-3 px-6 text-left">Active</th>
+                    <th class="py-3 px-6 text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+                @foreach (var item in Model)
+                {
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap">@item.Code</td>
+                        <td class="py-3 px-6 text-left">@item.Name</td>
+                        <td class="py-3 px-6 text-left">@item.Price</td>
+                        <td class="py-3 px-6 text-left">
+                            @if (@item.IsActive)
+                            {
+                                <span class="text-primary">Yes</span>
+                            }
+                            else
+                            {
+                                <span class="text-secondary">No</span>
+                            }
+                        </td>
+                        <td class="py-3 px-6 text-center">
+                            <div class="flex item-center justify-center">
+                                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline btn-info flex-auto mr-2">Details</a>
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline btn-warning flex-auto mr-2">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline btn-error flex-auto"> Delete </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <div class="join">
+        @if (Model.PageCount > 1)
+        {
+            <a class="join-item btn btn-accent" href="@Url.Action("Index", new { page = 1 })" @(Model.IsFirstPage ? "disabled" : "")>First</a>
+            <a class="join-item btn btn-accent" href="@Url.Action("Index", new { page = Model.PageNumber - 1 })" @(Model.IsFirstPage ? "disabled" : "")>Previous</a>
+
+            @for (int i = 1; i <= Model.PageCount; i++)
+            {
+                <a class="join-item btn btn-secondary" href="@Url.Action("Index", new { page = i })" @(Model.PageNumber == i ? "disabled" : "active")>@i</a>
+            }
+
+            <a class="join-item btn btn-accent" href="@Url.Action("Index", new { page = Model.PageNumber + 1 })" @(Model.IsLastPage ? "disabled" : "")>Next</a>
+            <a class="join-item btn btn-accent" href="@Url.Action("Index", new { page = Model.PageCount })" @(Model.IsLastPage ? "disabled" : "")>Last</a>
+        }
+    </div>
+</div>
+
+<script>
+    // Wait for the DOM content to be fully loaded
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get the search input element
+        var searchInput = document.getElementById("searchInput");
+
+        // Add event listener for handling key press events
+        searchInput.addEventListener("keypress", function (event) {
+            // Check if the Enter key is pressed (key code 13)
+            if (event.key === "Enter") {
+                // Prevent the default form submission behavior
+                event.preventDefault();
+
+                // Perform the search
+                searchProducts();
+            }
+        });
+    });
+
+    // Function to perform the search
+    function searchProducts() {
+        // Get the search term from the input element
+        var searchTerm = document.getElementById("searchInput").value;
+
+        // Check if the search term is not empty
+        if (searchTerm.trim() !== "") {
+            // Encode the search term to handle special characters properly
+            var encodedSearchTerm = encodeURIComponent(searchTerm);
+
+            // Redirect to the search URL with the encoded search term
+            window.location.href = "/Product/Search?searchTerm=" + encodedSearchTerm;
+        } else {
+            // Display an error message or handle the empty search term case
+            alert("Please enter a search term.");
+        }
+    }
+</script>

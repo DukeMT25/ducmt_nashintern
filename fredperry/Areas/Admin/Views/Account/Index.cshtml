@@ -1,0 +1,40 @@
+﻿@model List<IdentityUser>
+
+@{
+    ViewData["Title"] = "User Management";
+    // Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="overflow-x-auto h-screen">
+    <div class="bg-gray-200 px-4 py-2 flex justify-between items-center">
+        <h2 class="text-xl text-gray-600">User Management</h2>
+        <a asp-action="Create" class="btn btn-outline btn-success">Create New User</a>
+    </div>
+    <div class="bg-white shadow-md rounded my-6">
+        <table class="min-w-max w-full table-auto">
+            <thead>
+                <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                    <th class="py-3 px-6 text-left">Username</th>
+                    <th class="py-3 px-6 text-left">Email</th>
+                    <th class="py-3 px-6 text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+                @foreach (var user in Model)
+                {
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap">@user.UserName</td>
+                        <td class="py-3 px-6 text-left">@user.Email</td>
+                        <td class="py-3 px-6 text-center">
+                            <form asp-action="Delete" asp-route-id="@user.Id" method="post" class="flex item-center justify-center" >
+                                <a asp-action="Edit" asp-route-id="@user.Id" class="btn btn-outline btn-warning flex-auto mr-2">Edit</a>
+                                <button type="submit" class="btn btn-outline btn-error flex-auto">Delete</button>
+                            </form>
+
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
