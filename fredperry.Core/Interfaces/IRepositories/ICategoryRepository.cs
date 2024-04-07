@@ -1,4 +1,5 @@
-﻿using fredperry.Core.Entities.General;
+﻿using fredperry.Core.Entities.Business;
+using fredperry.Core.Entities.General;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,6 @@ namespace fredperry.Core.Interfaces.IRepositories
 {
     public interface ICategoryRepository : IBaseRepository<Category>
     {
-        Task<IEnumerable<Category>> Search(string searchTerm);
+        Task<IEnumerable<CategoryViewModel>> Search(string searchTerm);
     }
 }

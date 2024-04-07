@@ -1,4 +1,5 @@
-﻿using fredperry.Core.Entities.General;
+﻿using fredperry.Core.Entities.Business;
+using fredperry.Core.Entities.General;
 using fredperry.Core.Interfaces.IRepositories;
 using fredperry.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
@@ -16,9 +17,23 @@ namespace fredperry.Infrastructure.Repositories
         {
         }
 
-        public async Task<IEnumerable<Product>> Search(string searchTerm)
+        public async Task<IEnumerable<ProductViewModel>> Search(string searchTerm)
         {
-            return await _dbContext.Products.Where(p => p.Code.Contains(searchTerm) || p.Name.Contains(searchTerm)).ToListAsync();
+            // Query the database to find products that match the searchTerm
+            var products = await _dbContext.Products
+                .Where(p => EF.Functions.Like(p.Code, $"%{searchTerm}%") || EF.Functions.Like(p.Name, $"%{searchTerm}%"))
+                .Select(p => new ProductViewModel
+                {
+                    Id = p.Id,
+                    Code = p.Code,
+                    Name = p.Name,
+                    Price = p.Price,
+                    IsActive = p.IsActive,
+                    IsNewRelease = p.IsNewRelease,
+                })
+                .ToListAsync();
+
+            return products;
         }
     }
 }

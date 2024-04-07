@@ -28,6 +28,25 @@ namespace fredperry.UI.Areas.Admin.Controllers
             _productService = productService;
         }
 
+        public async Task<IActionResult> Search(string searchTerm)
+        {
+            try
+            {
+                ViewBag.SearchTerm = searchTerm;
+
+                var categories = await _categoryService.Search(searchTerm);
+
+                return View(categories);
+            }
+            catch (Exception ex)
+            {
+                // Log any errors that occur during product retrieval
+                _logger.LogError(ex, "An error occurred while retrieving products");
+                // Return a status code 500 and display the error message
+                return StatusCode(500, ex.Message);
+            }
+        }
+
         // GET: Category/Index
         public async Task<IActionResult> Index(int? page)
         {

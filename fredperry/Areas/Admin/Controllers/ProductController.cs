@@ -26,8 +26,21 @@ namespace fredperry.UI.Areas.Admin.Controllers
 
         public async Task<IActionResult> Search(string searchTerm)
         {
-            var products = await _productService.Search(searchTerm);
-            return View(products);
+            try
+            {
+                ViewBag.SearchTerm = searchTerm;
+
+                var products = await _productService.Search(searchTerm);
+
+                return View(products);
+            }
+            catch (Exception ex)
+            {
+                // Log any errors that occur during product retrieval
+                _logger.LogError(ex, "An error occurred while retrieving products");
+                // Return a status code 500 and display the error message
+                return StatusCode(500, ex.Message);
+            }
         }
 
 

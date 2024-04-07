@@ -92,8 +92,10 @@ namespace fredperry.Core.Services
 
         public async Task<IEnumerable<ProductViewModel>> Search(string searchTerm)
         {
-            var products = await _productRepository.Search(searchTerm);
-            return _productViewModelMapper.MapList(products);
+            // Implement the logic to search for products based on the given search term
+            var searchResults = await _productRepository.Search(searchTerm);
+
+            return searchResults;
         }
 
 

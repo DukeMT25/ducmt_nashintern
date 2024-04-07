@@ -90,9 +90,8 @@ namespace fredperry.Core.Services
         public async Task<IEnumerable<CategoryViewModel>> Search(string searchTerm)
         {
             var categories = await _categoryRepository.Search(searchTerm);
-            return _categoryViewModelMapper.MapList(categories);
+            return categories;
         }
-
 
         public async Task<IEnumerable<CategoryViewModel>> GetCategoriesByIds(IEnumerable<int> categoryIds)
         {

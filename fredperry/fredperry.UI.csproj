@@ -105,4 +105,12 @@
     <Content Include="Areas\Admin\Views\Product\Search.cshtml" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Category\Search.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Account\Search.cshtml" />
+  </ItemGroup>
+
 </Project>

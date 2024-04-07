@@ -1,4 +1,6 @@
 ﻿using fredperry.Core.Entities.Business;
+using fredperry.Core.Interfaces.IRepositories;
+using fredperry.Core.Interfaces.IServices;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -11,15 +13,27 @@ namespace fredperry.UI.Areas.Admin.Controllers
     {
         private readonly UserManager<IdentityUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IAccountService _accountService;
 
-        public AccountController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager)
+        public AccountController(UserManager<IdentityUser> userManager, RoleManager<IdentityRole> roleManager, IAccountService accountService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
+            _accountService = accountService;
         }
 
         // CRUD actions for managing users
         // Example: Index, Create, Edit, Delete
+
+        public async Task<IActionResult> Search(string searchTerm)
+        {
+            ViewBag.SearchTerm = searchTerm;
+
+            var users = await _accountService.Search(searchTerm);
+
+            // Return the paginated results to the view
+            return View(users);
+        }
 
         public async Task<IActionResult> Index()
         {

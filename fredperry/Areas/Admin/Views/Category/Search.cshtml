@@ -1,0 +1,44 @@
+﻿@model List<CategoryViewModel>
+
+@{
+    ViewData["Title"] = "Search Results";
+}
+
+<div class="overflow-x-auto h-screen">
+    <div class="bg-gray-200 px-4 py-2 flex justify-between items-center">
+        <h2 class="text-xl text-gray-600">Search Results for @ViewBag.SearchTerm</h2>
+        <form method="get" asp-action="Search" class="relative flex">
+            <input name="searchTerm" id="searchInput" type="text" placeholder="Search categories..." class="flex-1 mr-2 pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none">
+            <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Search</button>
+            <svg class="absolute left-3 top-3 h-5 w-5 text-gray-400 hidden md:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m4-5a8 8 0 11-16 0 8 8 0 0116 0z"></path>
+            </svg>
+        </form>
+
+        <a asp-action="Create" class="btn btn-outline btn-success">Create New</a>
+    </div>
+    <div class="bg-white shadow-md rounded my-6">
+        <table class="min-w-max w-full table-auto">
+            <thead>
+                <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                    <th class="py-3 px-6 text-left">Name</th>
+                    <th class="py-3 px-6 text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+                @foreach (var item in Model)
+                {
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left">@item.Name</td>
+                        <td class="py-3 px-6 text-center">
+                            <div class="flex item-center justify-center">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline btn-warning flex-auto mr-2">Edit</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline btn-error flex-auto">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

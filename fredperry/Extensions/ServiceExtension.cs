@@ -18,6 +18,7 @@ namespace fredperry.UI.Extensions
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductCategoryService, ProductCategoryService>();
+            services.AddScoped<IAccountService, AccountService>();
 
             #endregion
 
@@ -25,6 +26,7 @@ namespace fredperry.UI.Extensions
             services.AddTransient<IProductRepository, ProductRepository>();
             services.AddTransient<ICategoryRepository, CategoryRepository>();
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddTransient<IAccountRepository, AccountRepository>();
 
             #endregion
 

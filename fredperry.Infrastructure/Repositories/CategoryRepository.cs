@@ -18,9 +18,19 @@ namespace fredperry.Infrastructure.Repositories
         {
         }
 
-        public async Task<IEnumerable<Category>> Search(string searchTerm)
+        public async Task<IEnumerable<CategoryViewModel>> Search(string searchTerm)
         {
-            return await _dbContext.Categories.Where(p =>  p.Name.Contains(searchTerm)).ToListAsync();
+            // Query the database to find products that match the searchTerm
+            var categories = await _dbContext.Categories
+                .Where(c => EF.Functions.Like(c.Name, $"%{searchTerm}%"))
+                .Select(c => new CategoryViewModel
+                {
+                    Id = c.Id,
+                    Name = c.Name,
+                })
+                .ToListAsync();
+
+            return categories;
         }
     }
 }
