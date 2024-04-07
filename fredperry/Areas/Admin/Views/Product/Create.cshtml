@@ -60,9 +60,15 @@
                 <span asp-validation-for="SelectedCategoryIds" class="text-red-500"></span>
             </div>
 
+            <div>
+                <label asp-for="PictureUrl" class="block text-sm font-medium text-gray-700">Product Picture URL</label>
+                <input asp-for="PictureUrl" type="url" class="input input-bordered input-primary w-full" />
+                <span asp-validation-for="PictureUrl" class="text-red-600"></span>
+            </div>
+
             <div class="flex justify-end">
                 <button type="submit" class="btn btn-primary  mr-2">Create</button>
-                <a asp-action="Index" class="btn btn-neutral">Back</a>           
+                <a asp-action="Index" class="btn btn-secondary">Back</a>           
             </div>
         </form>
     </div>

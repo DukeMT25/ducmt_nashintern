@@ -3,10 +3,12 @@
   "WorkspaceRootPath": "D:\\repos\\ducmt_nashintern\\fredperry\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2E1CA6F-B0B7-4497-BDB9-02FC172DA34B}|..\\fredperry.Infrastructure\\fredperry.Infrastructure.csproj|d:\\repos\\ducmt_nashintern\\fredperry.infrastructure\\repositories\\accountreppository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AD352AF-04E7-4255-9FCC-332346685100}|..\\fredperry.Core\\fredperry.Core.csproj|d:\\repos\\ducmt_nashintern\\fredperry.core\\interfaces\\irepositories\\iaccountrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|d:\\repos\\ducmt_nashintern\\fredperry\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{790D5C04-B5BC-433C-9867-8412C41CE078}|fredperry.UI.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,32 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 289,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IAccountRepository.cs",
-              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry.Core\\Interfaces\\IRepositories\\IAccountRepository.cs",
-              "RelativeDocumentMoniker": "..\\fredperry.Core\\Interfaces\\IRepositories\\IAccountRepository.cs",
-              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry.Core\\Interfaces\\IRepositories\\IAccountRepository.cs",
-              "RelativeToolTip": "..\\fredperry.Core\\Interfaces\\IRepositories\\IAccountRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:22:34.258Z",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-07T19:44:49.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountReppository.cs",
-              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry.Infrastructure\\Repositories\\AccountReppository.cs",
-              "RelativeDocumentMoniker": "..\\fredperry.Infrastructure\\Repositories\\AccountReppository.cs",
-              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry.Infrastructure\\Repositories\\AccountReppository.cs",
-              "RelativeToolTip": "..\\fredperry.Infrastructure\\Repositories\\AccountReppository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "D:\\repos\\ducmt_nashintern\\fredperry\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "D:\\repos\\ducmt_nashintern\\fredperry\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAADwvwAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T15:22:19.266Z",
+              "WhenOpened": "2024-04-07T19:44:47.481Z",
               "EditorCaption": ""
             }
           ]

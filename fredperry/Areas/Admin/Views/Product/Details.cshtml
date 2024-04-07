@@ -1,78 +1,84 @@
-﻿@model ProductDetailViewModel
-
-@{
-    ViewData["Title"] = "Details";
-    // Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
-<div class="container mx-auto py-8 h-screen">
+﻿<div class="container mx-auto py-8 h-screen">
     <div class="bg-white shadow-md rounded-lg overflow-hidden">
         <div class="bg-gray-100 px-4 py-2">
             <h2 class="text-lg font-semibold text-gray-800">Product Details</h2>
         </div>
 
-        <div class="p-4">
-            <dl class="grid grid-cols-2 gap-x-4 gap-y-2">
-                <div>
-                    <dt class="text-sm font-medium text-gray-600">Code:</dt>
-                    <dd class="text-sm text-gray-800">@Model.Product.Code</dd>
-                </div>
+        <div class="p-4 flex flex-row">
+            <!-- Product Information -->
+            <div class="basis-1/2">
+                <dl class="grid grid-cols-2 gap-x-4 gap-y-2">
+                    <div>
+                        <dt class="text-sm font-medium text-gray-600">Code:</dt>
+                        <dd class="text-sm text-gray-800">@Model.Product.Code</dd>
+                    </div>
 
-                <div>
-                    <dt class="text-sm font-medium text-gray-600">Name:</dt>
-                    <dd class="text-sm text-gray-800">@Model.Product.Name</dd>
-                </div>
+                    <div>
+                        <dt class="text-sm font-medium text-gray-600">Name:</dt>
+                        <dd class="text-sm text-gray-800">@Model.Product.Name</dd>
+                    </div>
 
-                <div>
-                    <dt class="text-sm font-medium text-gray-600">Price:</dt>
-                    <dd class="text-sm text-gray-800">@Model.Product.Price</dd>
-                </div>
+                    <div>
+                        <dt class="text-sm font-medium text-gray-600">Price:</dt>
+                        <dd class="text-sm text-gray-800">@Model.Product.Price</dd>
+                    </div>
 
-                <div class="col-span-2">
-                    <dt class="text-sm font-medium text-gray-600">Description:</dt>
-                    <dd class="text-sm text-gray-800">@Model.Product.Description</dd>
-                </div>
+                    <div class="col-span-2">
+                        <dt class="text-sm font-medium text-gray-600">Description:</dt>
+                        <dd class="text-sm text-gray-800">@Model.Product.Description</dd>
+                    </div>
 
-                <div>
-                    <dt class="text-sm font-medium text-gray-600">Active:</dt>
-                    <dd class="text-sm text-gray-800">@if (Model.Product.IsActive)
-                        {
-                            <span class="text-green-600">Yes</span>
-                        }
-                        else
-                        {
-                            <span class="text-red-600">No</span>
-                        }</dd>
-                </div>
-
-                <div>
-                    <dt class="text-sm font-medium text-gray-600">New Release:</dt>
-                    <dd class="text-sm text-gray-800">@if (Model.Product.IsNewRelease)
-                        {
-                            <span class="text-green-600">Yes</span>
-                        }
-                        else
-                        {
-                            <span class="text-red-600">No</span>
-                        }</dd>
-                </div>
-
-                <div class="col-span-2">
-                    <dt class="text-sm font-medium text-gray-600">Categories:</dt>
-                    <dd class="text-sm text-gray-800">
-                        <ul class="list-disc pl-4">
-                            @foreach (var category in Model.Categories)
+                    <div>
+                        <dt class="text-sm font-medium text-gray-600">Active:</dt>
+                        <dd class="text-sm text-gray-800">
+                            @if (Model.Product.IsActive)
                             {
-                                <li>@category.Name</li>
+                                <span class="text-green-600">Yes</span>
                             }
-                        </ul>
-                    </dd>
-                </div>
-            </dl>
+                            else
+                            {
+                                <span class="text-red-600">No</span>
+                            }
+                        </dd>
+                    </div>
 
-            <div class="flex justify-end mt-4">
-                <a asp-action="Index" class="btn btn-secondary">Back</a>
+                    <div>
+                        <dt class="text-sm font-medium text-gray-600">New Release:</dt>
+                        <dd class="text-sm text-gray-800">
+                            @if (Model.Product.IsNewRelease)
+                            {
+                                <span class="text-green-600">Yes</span>
+                            }
+                            else
+                            {
+                                <span class="text-red-600">No</span>
+                            }
+                        </dd>
+                    </div>
+
+                    <div class="col-span-2">
+                        <dt class="text-sm font-medium text-gray-600">Categories:</dt>
+                        <dd class="text-sm text-gray-800">
+                            <ul class="list-disc pl-4">
+                                @foreach (var category in Model.Categories)
+                                {
+                                    <li>@category.Name</li>
+                                }
+                            </ul>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+
+            <!-- Product Image -->
+            <div class="basis-1/2 ml-4 justify-center">
+                <img src="@Model.Product.PictureUrl" alt="Product Image" class="h-96 w-auto" />
             </div>
         </div>
+
+        <div class="flex justify-end mx-0.5 my-0.5">
+            <a asp-area="Customer" asp-controller="Men" asp-action="Index" class="btn btn-secondary">Back</a>
+        </div>
+
     </div>
 </div>

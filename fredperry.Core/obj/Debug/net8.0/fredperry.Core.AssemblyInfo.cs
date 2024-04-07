@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("fredperry.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5eda57994b282909cdfde06038d897b124031ab0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2372c5f031112efe063d5a495afda6597c2450ce")]
 [assembly: System.Reflection.AssemblyProductAttribute("fredperry.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("fredperry.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

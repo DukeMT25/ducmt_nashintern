@@ -21,6 +21,8 @@ namespace fredperry.Core.Entities.Business
         public string? Description { get; set; }
         public bool IsActive { get; set; }
         public bool IsNewRelease { get; set; }
+        [Url]
+        public string? PictureUrl { get; set; }
 
         // Property to hold the categories associated with the product
         public List<SelectListItem>? Categories { get; set; }

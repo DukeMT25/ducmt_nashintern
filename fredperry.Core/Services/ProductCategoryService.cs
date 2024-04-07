@@ -1,4 +1,5 @@
-﻿using fredperry.Core.Entities.General;
+﻿using fredperry.Core.Entities.Business;
+using fredperry.Core.Entities.General;
 using fredperry.Core.Interfaces.IRepositories;
 using fredperry.Core.Interfaces.IServices;
 using System;
@@ -12,10 +13,12 @@ namespace fredperry.Core.Services
     public class ProductCategoryService : IProductCategoryService
     {
         private readonly IProductCategoryRepository _productCategoryRepository;
+        private readonly IProductService _productService;
 
-        public ProductCategoryService(IProductCategoryRepository productCategoryRepository)
+        public ProductCategoryService(IProductCategoryRepository productCategoryRepository, IProductService productService)
         {
             _productCategoryRepository = productCategoryRepository;
+            _productService = productService;
         }
 
         public async Task<IEnumerable<ProductCategory>> GetCategoriesByProductId(int productId)
@@ -30,8 +33,53 @@ namespace fredperry.Core.Services
             return await _productCategoryRepository.GetProductsByCategoryId(categoryId);
         }
 
+        public async Task<IEnumerable<ProductViewModel>> GetProductsByCategoryIds(IEnumerable<int> categoryIds)
+        {
+            var productViewModels = new List<ProductViewModel>();
 
-        public async Task<List<int>> GetCategoryIdsByProductId(int productId)
+            // Retrieve products associated with the first category
+            var firstCategoryProducts = await _productCategoryRepository.GetProductsByCategoryId(categoryIds.First());
+
+            // Retrieve products associated with the second category
+            var secondCategoryProducts = await _productCategoryRepository.GetProductsByCategoryId(categoryIds.Last());
+
+            // Find products that belong to both categories
+            var productsInBothCategories = firstCategoryProducts
+                .Where(pc1 => secondCategoryProducts.Any(pc2 => pc1.ProductId == pc2.ProductId));
+
+            var pid = new List<int>();
+
+            foreach (var ponc in  productsInBothCategories)
+            {
+                pid.Add(ponc.ProductId);
+            }
+
+            var targetProducts = await _productService.GetProductsByIds(pid);
+
+            // Convert products to view models
+            foreach (var product in targetProducts)
+            {
+                var productViewModel = new ProductViewModel
+                {
+                    Id = product.Id,
+                    Code = product.Code,
+                    Name = product.Name,
+                    Price = product.Price,
+                    Description = product.Description,
+                    IsActive = product.IsActive,
+                    IsNewRelease = product.IsNewRelease,
+                    PictureUrl = product.PictureUrl
+                    // Add other properties as needed
+                };
+
+                productViewModels.Add(productViewModel);
+            }
+
+            return productViewModels;
+        }
+
+
+            public async Task<List<int>> GetCategoryIdsByProductId(int productId)
         {
             // Here you should call the method from the repository to get category IDs by product ID
             var categoryIds = await _productCategoryRepository.GetCategoryIdsByProductId(productId);

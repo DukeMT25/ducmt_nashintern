@@ -15,6 +15,16 @@
             <a class="navbar-brand" asp-area="Admin" asp-controller="Product" asp-action="Index">fredperry</a>
             <a class="navbar-brand" asp-area="Admin" asp-controller="Category" asp-action="Index">The AREA</a>
             <a class="navbar-brand" asp-area="Admin" asp-controller="Account" asp-action="Index">The AREA</a>
+            <br />
+
+            <form asp-area="Customer" asp-controller="Men" asp-action="CateProduct" method="get">
+                <input type="hidden" name="categoryIds" value="1" />
+                <input type="hidden" name="categoryIds" value="3" />
+                <button type="submit">View Products</button>
+            </form>
+
+            
+
 
             <partial name="_LoginPartial" />
         </div>

@@ -21,6 +21,8 @@ namespace fredperry.Core.Entities.General
         public string? Description { get; set; }
         public bool IsActive { get; set; }
         public bool IsNewRelease { get; set; }
+        [Url]
+        public string? PictureUrl { get; set; }
 
         public ICollection<ProductCategory> ProductCategories { get; set; }
     }

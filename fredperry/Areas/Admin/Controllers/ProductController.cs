@@ -315,6 +315,7 @@ namespace fredperry.UI.Areas.Admin.Controllers
                     Description = product.Description,
                     IsActive = product.IsActive,
                     IsNewRelease = product.IsNewRelease,
+                    PictureUrl = product.PictureUrl,
                     // Populate the Categories dropdown list
                     Categories = categories.Select(c => new SelectListItem
                     {

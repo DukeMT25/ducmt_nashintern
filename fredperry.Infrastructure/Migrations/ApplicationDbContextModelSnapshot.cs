@@ -157,14 +157,14 @@ namespace fredperry.Infrastructure.Migrations
                         {
                             Id = "1",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "6d4bd7f7-067e-4a5c-ad33-3c13c729c1e6",
+                            ConcurrencyStamp = "0225d1b0-1e95-48dd-b65d-91697d9560cd",
                             Email = "admin1@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "admin1@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAECcskC0zP/4zunnQEdysRvBcRmWpNqXqd/+uZ3G2tVVodT+/+zs7aNzJkv+1Pqm6ow==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIwggmfnyWImIAPvsC6GAMziCxMLvmW395ZlEzQH+Biz+NcB1hP6oJFzoA7nk0QuPQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d7e5ad51-8dac-4a77-9c24-9bf114733334",
+                            SecurityStamp = "13fe9acc-cbdf-41b4-befa-2129230836db",
                             TwoFactorEnabled = false,
                             UserName = "admin1"
                         },
@@ -172,14 +172,14 @@ namespace fredperry.Infrastructure.Migrations
                         {
                             Id = "2",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a71819f5-d7aa-44d5-8d97-dcd616eaac88",
+                            ConcurrencyStamp = "a614d55e-5f86-41c1-8826-981ddbc33040",
                             Email = "admin2@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "admin2@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHKTmKues8nozYiwUcTKZSVGGwYCn0WeTkv5I7c2sx+jw4+nwXl05+XaF5nl+OXchw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELuZW0X5gmGVho5pg/EP9Ay790Wf7Hu5JSXTXUZtMYOmBMAQimBancKkYHQbDL5Lqg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "3f3d093c-265f-4bf0-88e5-56a780d008cf",
+                            SecurityStamp = "88a9ff18-8bc7-4eac-8f6d-b9ef6bd0f04a",
                             TwoFactorEnabled = false,
                             UserName = "admin2"
                         },
@@ -187,14 +187,14 @@ namespace fredperry.Infrastructure.Migrations
                         {
                             Id = "3",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "fd984e0d-36aa-4b33-84e1-e31c598b5b99",
+                            ConcurrencyStamp = "5072ae2b-6bc3-49b7-bb0f-60837cfca6cb",
                             Email = "admin3@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "admin3@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHk8ELYsUeuaEyu8/59Z8oH2AgaYgr5gN5yxPzEftwm9rcNEBx+7IXME2Y/xBcOveg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIKqZ/J83kslkK7ZIeKhpflbHyUEYJfH6t0j9MmUdsGG3gj+BNgbIw1iECLFLgk1IQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ccc60507-5855-4d58-acf9-1d408660be23",
+                            SecurityStamp = "279d2564-e3af-4bfe-908f-f328ce7b0b52",
                             TwoFactorEnabled = false,
                             UserName = "admin3"
                         },
@@ -202,14 +202,14 @@ namespace fredperry.Infrastructure.Migrations
                         {
                             Id = "4",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4b41ce70-4a61-4547-bf98-1877a2622db1",
+                            ConcurrencyStamp = "0cb53c47-43fe-4817-8bd6-d8e1d8c06677",
                             Email = "customer1@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "customer1@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDKHTI1fJBjcq92JKRnZjMurjIlIxKfZukmz5vuHKUSvNBOQcWIQ+zVPgb99tXwqRw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGk/lmbk/YuWlFdtx85/GvmoBf4sMjjREk7zRBUXJZhzuR7Ls6qlTStGlbcM5I7Lbg==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "97c07605-9649-491b-ae63-bb44e2b67dc5",
+                            SecurityStamp = "6d4a3f2a-7ef2-403a-8731-bc3af2eeae46",
                             TwoFactorEnabled = false,
                             UserName = "customer1"
                         },
@@ -217,14 +217,14 @@ namespace fredperry.Infrastructure.Migrations
                         {
                             Id = "5",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ec5591f3-562c-4abb-b5c6-69d34b6c9b80",
+                            ConcurrencyStamp = "cb9b2c4d-f6e4-46d3-95d2-311e251950a0",
                             Email = "customer2@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "customer2@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIIiAs7AX2yh451sBB5SOUq5bSWbviwkRAVK0JYfMZxJhG4RwFuUJEKTUPb/BmV3sQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMFVP5XZ9lAGAeU86OmC5En9kBTIdDJeqSwY1L4cbWareRZY0eVz5tWUqQkeR5dc6g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4af501fa-0925-4876-add4-cbc47d50f938",
+                            SecurityStamp = "321c4111-6242-4932-9d12-982a79b03161",
                             TwoFactorEnabled = false,
                             UserName = "customer2"
                         },
@@ -232,14 +232,14 @@ namespace fredperry.Infrastructure.Migrations
                         {
                             Id = "6",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4a4aeac1-cf73-433f-8d8c-5aff20bf65c3",
+                            ConcurrencyStamp = "3fd3975b-f0d2-4b0d-a8d3-cefd0c3e40d3",
                             Email = "customer3@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedUserName = "customer3@gmail.com",
-                            PasswordHash = "AQAAAAIAAYagAAAAENUGmalq84F/Qqwe6AwT3DTGHPhWpbXX0/X9rJvelPPuNjdb4WF99ortpLMHBSUQGg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEF1y0fgmYoogiiAYJcHVyVOYwsmeMljMnth7fh2Q+4lPOCJMejTC0gLdLhq1CepZ/A==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "74d2dda5-e7b4-401f-b1cc-2b4ae043db5e",
+                            SecurityStamp = "79ef75e3-0825-41da-8ed8-774a96a82f2a",
                             TwoFactorEnabled = false,
                             UserName = "customer3"
                         });
@@ -400,6 +400,11 @@ namespace fredperry.Infrastructure.Migrations
                         {
                             Id = 3,
                             Name = "The Fred Perry Shirt"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Coats & Jackets"
                         });
                 });
 
@@ -434,6 +439,9 @@ namespace fredperry.Infrastructure.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
+                    b.Property<string>("PictureUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<float>("Price")
                         .HasColumnType("real");
 
@@ -451,8 +459,9 @@ namespace fredperry.Infrastructure.Migrations
                             Code = "P001",
                             IsActive = true,
                             IsNewRelease = true,
-                            Name = "Men's Polo Shirt",
-                            Price = 29.99f
+                            Name = "M3600",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/5df3cd12867f42fc0f0630ded205ccd9/M/3/M3600_V35_V2_Q224_MOD1_FRONT.JPG",
+                            Price = 75f
                         },
                         new
                         {
@@ -460,8 +469,9 @@ namespace fredperry.Infrastructure.Migrations
                             Code = "P002",
                             IsActive = true,
                             IsNewRelease = true,
-                            Name = "Women's Polo Shirt",
-                            Price = 29.99f
+                            Name = "M6000",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/03133f2281aec8ae153eeb0f3a984db2/M/6/M6000_V08_V2_Q124_MOD1_FRONT.JPG",
+                            Price = 75f
                         },
                         new
                         {
@@ -469,8 +479,209 @@ namespace fredperry.Infrastructure.Migrations
                             Code = "P003",
                             IsActive = true,
                             IsNewRelease = true,
-                            Name = "Fred Perry Classic Shirt",
-                            Price = 39.99f
+                            Name = "M12",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/f07b9be9a45c76d3fe7a961404ccc563/M/1/M12_V46_V2_Q124_MOD1_FRONT.JPG",
+                            Price = 100f
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Code = "P004",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Osaka M12",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/7cad0ca5918f66422087e7e308d335a6/M/7/M7731_V96_V2_Q323_FLATFRONT.JPG",
+                            Price = 120f
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Code = "P005",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Tokyo M12",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/29d42814455ec359ef500d1a7ad11576/M/7/M7731_V95_V2_Q323_FLATFRONT.JPG",
+                            Price = 120f
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Code = "P006",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Shanghai M12",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/1b0781da275362d653cecdd8081faaa3/M/7/M7731_V97_V2_Q323_FLATFRONT.JPG",
+                            Price = 75f
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Code = "P007",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Makati M12",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/e3573bf7eceeff94844f3e3868878ca8/M/7/M7731_V98_V2_Q323_FLATFRONT.JPG",
+                            Price = 75f
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Code = "P008",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Brentham Jacket",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/9767c4bb32c5ba031d4c817202f720e4/J/2/J2660_102_1.JPG",
+                            Price = 160f
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Code = "P009",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Harrington Jacket M",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/f87c8868c51a0f5a50fcd1e2ac9f34d1/J/7/J7320_102_V2_Q323_MOD1_FRONT.JPG",
+                            Price = 275f
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Code = "P010",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Textured Zip-Through Overshirt",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/9f25655e4e417091766f035488a014a4/M/5/M5684_608_V2_Q124_MOD1_FRONT.JPG",
+                            Price = 140f
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Code = "P011",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Shell Mac",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/eacaf148ef918b278e70b12c65a357ea/J/7/J7811_638_V2_Q124_MOD1_FRONT.JPG",
+                            Price = 250f
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Code = "P012",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Insulated Gilet",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/f2684b259bf5bd84e98b92febd804bbf/J/4/J4566_297_V2_Q124_MOD1_FRONT.JPG",
+                            Price = 140f
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Code = "P013",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "G3600",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/db241c40e38d9e113075984e50f341bb/G/3/G3600_R30_V2_Q224_MOD1_FRONT.JPG",
+                            Price = 75f
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Code = "P014",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "G6000",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/c684c76afbeec429a9b7f5deae566f0a/G/6/G6000_B34_V2_Q224_MOD1_FRONT.JPG",
+                            Price = 75f
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Code = "P015",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "G3636",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/943d29fb9141199f8ad71607593909c3/G/3/G3636_S51_V2_Q124_MOD1_FRONT.JPG",
+                            Price = 90f
+                        },
+                        new
+                        {
+                            Id = 16,
+                            Code = "P016",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "G12",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/5c26e2b4d30bab0caebee4e8876d59fd/G/1/G12_301_1.JPG",
+                            Price = 100f
+                        },
+                        new
+                        {
+                            Id = 17,
+                            Code = "P017",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "G7200",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/e88a0615aea85b799c321277b3042aa2/G/7/G7200_129_V2_Q224_ED2.JPG",
+                            Price = 65f
+                        },
+                        new
+                        {
+                            Id = 18,
+                            Code = "P018",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Laurel Wreath Zip-Through Jacket",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/5aa51f239f594747b4af572c697e331d/S/J/SJ7111_102_V2_Q124_MOD1_FRONT.JPG",
+                            Price = 190f
+                        },
+                        new
+                        {
+                            Id = 19,
+                            Code = "P019",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Harrington Jacket G",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/bb1d54160fa477a81956aceefcd03d16/J/7/J7412_102_1.JPG",
+                            Price = 275f
+                        },
+                        new
+                        {
+                            Id = 20,
+                            Code = "P020",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Cropped Taped Track Jacket",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/52cfad5dcd5998e8b333b2acef65bb7c/J/5/J5157_102_1.JPG",
+                            Price = 100f
+                        },
+                        new
+                        {
+                            Id = 21,
+                            Code = "P021",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Sheer Overlay Jacket",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/b70fc93a9fb1019080662b959b1ece58/J/7/J7118_102_V2_Q124_MOD1_FRONT.JPG",
+                            Price = 200f
+                        },
+                        new
+                        {
+                            Id = 22,
+                            Code = "P022",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Metallic Knitted Bomber Jacket",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/3bc570d7624851b832c2d24ccff944e7/S/K/SK6559_926_V2_Q423_MOD1_FRONT.JPG",
+                            Price = 175f
+                        },
+                        new
+                        {
+                            Id = 23,
+                            Code = "P023",
+                            IsActive = true,
+                            IsNewRelease = true,
+                            Name = "Quilted Jacket",
+                            PictureUrl = "https://www.fredperry.com/media/catalog/product/cache/cf54d35707f51b903032dd92405427c3/J/6/J6110_560_V2_Q423_MOD1_FRONT.JPG",
+                            Price = 225f
                         });
                 });
 
@@ -518,7 +729,7 @@ namespace fredperry.Infrastructure.Migrations
                         new
                         {
                             Id = 3,
-                            CategoryId = 2,
+                            CategoryId = 1,
                             ProductId = 2
                         },
                         new
@@ -536,14 +747,248 @@ namespace fredperry.Infrastructure.Migrations
                         new
                         {
                             Id = 6,
-                            CategoryId = 2,
+                            CategoryId = 3,
                             ProductId = 3
                         },
                         new
                         {
                             Id = 7,
+                            CategoryId = 1,
+                            ProductId = 4
+                        },
+                        new
+                        {
+                            Id = 8,
                             CategoryId = 3,
-                            ProductId = 3
+                            ProductId = 4
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CategoryId = 1,
+                            ProductId = 5
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CategoryId = 3,
+                            ProductId = 5
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CategoryId = 1,
+                            ProductId = 6
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CategoryId = 3,
+                            ProductId = 6
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CategoryId = 1,
+                            ProductId = 7
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CategoryId = 3,
+                            ProductId = 7
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CategoryId = 1,
+                            ProductId = 8
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CategoryId = 4,
+                            ProductId = 8
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CategoryId = 1,
+                            ProductId = 9
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CategoryId = 4,
+                            ProductId = 9
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CategoryId = 1,
+                            ProductId = 10
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CategoryId = 4,
+                            ProductId = 10
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CategoryId = 1,
+                            ProductId = 11
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CategoryId = 4,
+                            ProductId = 11
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CategoryId = 1,
+                            ProductId = 12
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CategoryId = 4,
+                            ProductId = 12
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CategoryId = 2,
+                            ProductId = 13
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CategoryId = 3,
+                            ProductId = 13
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CategoryId = 2,
+                            ProductId = 14
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CategoryId = 3,
+                            ProductId = 14
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CategoryId = 2,
+                            ProductId = 15
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CategoryId = 3,
+                            ProductId = 15
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CategoryId = 2,
+                            ProductId = 16
+                        },
+                        new
+                        {
+                            Id = 32,
+                            CategoryId = 3,
+                            ProductId = 16
+                        },
+                        new
+                        {
+                            Id = 33,
+                            CategoryId = 2,
+                            ProductId = 17
+                        },
+                        new
+                        {
+                            Id = 34,
+                            CategoryId = 3,
+                            ProductId = 17
+                        },
+                        new
+                        {
+                            Id = 35,
+                            CategoryId = 2,
+                            ProductId = 18
+                        },
+                        new
+                        {
+                            Id = 36,
+                            CategoryId = 4,
+                            ProductId = 18
+                        },
+                        new
+                        {
+                            Id = 37,
+                            CategoryId = 2,
+                            ProductId = 19
+                        },
+                        new
+                        {
+                            Id = 38,
+                            CategoryId = 4,
+                            ProductId = 19
+                        },
+                        new
+                        {
+                            Id = 39,
+                            CategoryId = 2,
+                            ProductId = 20
+                        },
+                        new
+                        {
+                            Id = 40,
+                            CategoryId = 4,
+                            ProductId = 20
+                        },
+                        new
+                        {
+                            Id = 41,
+                            CategoryId = 2,
+                            ProductId = 21
+                        },
+                        new
+                        {
+                            Id = 42,
+                            CategoryId = 4,
+                            ProductId = 21
+                        },
+                        new
+                        {
+                            Id = 43,
+                            CategoryId = 2,
+                            ProductId = 22
+                        },
+                        new
+                        {
+                            Id = 44,
+                            CategoryId = 4,
+                            ProductId = 22
+                        },
+                        new
+                        {
+                            Id = 45,
+                            CategoryId = 2,
+                            ProductId = 23
+                        },
+                        new
+                        {
+                            Id = 46,
+                            CategoryId = 4,
+                            ProductId = 23
                         });
                 });
 

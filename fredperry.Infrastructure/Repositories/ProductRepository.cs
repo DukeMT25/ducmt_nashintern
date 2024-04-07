@@ -2,9 +2,11 @@
 using fredperry.Core.Entities.General;
 using fredperry.Core.Interfaces.IRepositories;
 using fredperry.Infrastructure.Data;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;

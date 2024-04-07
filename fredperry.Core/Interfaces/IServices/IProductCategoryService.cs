@@ -1,4 +1,5 @@
-﻿using fredperry.Core.Entities.General;
+﻿using fredperry.Core.Entities.Business;
+using fredperry.Core.Entities.General;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace fredperry.Core.Interfaces.IServices
     {
         Task<IEnumerable<ProductCategory>> GetCategoriesByProductId(int productId);
         Task<IEnumerable<ProductCategory>> GetProductsByCategoryId(int categoryId);
+
+        Task<IEnumerable<ProductViewModel>> GetProductsByCategoryIds(IEnumerable<int> categoryIds);
 
         Task<List<int>> GetCategoryIdsByProductId(int productId);
 
