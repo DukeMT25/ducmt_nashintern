@@ -12,3 +12,11 @@ Trang web quản lý hãng thời tran Fred Perry gồm những chức năng n�
 - Đặc biệt lúc xóa category sẽ có 2 chế độ. Kiểm tra xem cate đó có liên kết với sản phầm nào không, nếu không thì xóa an toàn. Còn nếu như có liên kết, người quản lí sẽ có lựa chọn 1 trong những category khác để thay thế category hiện tại và xóa nó. Những sản phẩm có liên kết với category mục tiêu sẽ đổi đúng cate đấy với cate được chọn mới, những cate liên kết sẵn vẫn sẽ được giữ nguyên. 
 - Quản lí có thể tìm sản phẩm theo tên, hoặc code. Tìm category theo tên. Tìm người dùng theo username hoặc email.
 - Web đã được áp dụng những kiến thức cơ bản đã được học.
+
+Tài khoản test:
+ADMIN: 
+- admin1@gmail.com
+- 1234
+CUSTOMER:
+- customer1@gmail.com
+- 1234 
