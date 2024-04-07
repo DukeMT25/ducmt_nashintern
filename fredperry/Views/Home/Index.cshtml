@@ -2,26 +2,31 @@
     ViewData["Title"] = "Home Page";
 }
 
-    <div class="bg-fixed bg-cover bg-center h-screen" style="background-image: url('https://www.fredperry.com/media/widget/cache/H/E/151eb6247b24739ee1d8ae1bc58462b8/media/wysiwyg/2024/Q1/hp/HERO-1303-DESKTOP.jpg');">
+    <div class="bg-fixed bg-cover bg-center h-screen" style="background-image: url('https://www.fredperry.com/media/widget/cache/F/P/f3aa8ac900613f92d7d116e59474394f/media/wysiwyg/2024/Q2/hp/FP-Q2-Hero-New-Banner-Desktop-2560x1280px-1.jpg');">
         <!-- Content container with scrolling -->
         <!-- Full-screen div -->
         <div class="flex flex-col justify-between h-full">
             <!-- Full-screen clickable area for redirection -->
-            <a href="https://www.fredperry.com" class="w-full h-full flex justify-center items-center">
-                <span class="text-white text-lg font-semibold mb-8">Click anywhere to redirect</span>
+            <a href="https://www.fredperry.com" class="w-full h-full flex justify-center content-end items-center">
+                <h2 class="text-white text-lg font-semibold mt-96">MEN'S AND WOMEN's</h2>
             </a>
+                    <h1 class=" mx-auto text-white text-2xl font-bold mb-4"> New Releases </h1   
             <!-- Main content -->
             <div class="flex flex-col justify-end items-center">
                 <!-- Your main content here -->
                 <!-- For example, buttons -->
-                <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4" href="https://www.fredperry.com/shop-finder">Click to redirect</a>
-                <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="https://www.fredperry.com/shop-finder">Click to redirect</a>
+                <div class="flex">
+                    <form asp-area="Customer" asp-controller="Men" asp-action="CateProduct" method="get">
+                        <input type="hidden" name="categoryIds" value="1" />
+                        <input type="hidden" name="categoryIds" value="3" />
+                        <button type="submit" class=" bg-white text-black px-3 py-2 mr-2 mb-4 rounded-md text-xl font-bold">Shop Men's</button>
+                    </form>
+                    <form asp-area="Customer" asp-controller="Women" asp-action="CateProduct" method="get">
+                        <input type="hidden" name="categoryIds" value="2" />
+                        <input type="hidden" name="categoryIds" value="3" />
+                        <button type="submit" class=" bg-white text-black px-3 py-2 mb-4 rounded-md text-xl font-bold">Shop Women's</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
-
-<div class="bg-white p-8 rounded-lg shadow-md">
-    <h1 class="text-3xl font-bold mb-4">Welcome to Tailwind CSS!</h1>
-    <p class="text-lg text-gray-700">Tailwind CSS is a utility-first CSS framework for rapidly building custom designs.</p>
-    <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Get Started</button>
-</div>

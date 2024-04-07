@@ -2,6 +2,7 @@
 using fredperry.Core.Entities.General;
 using fredperry.Core.Interfaces.IServices;
 using fredperry.Core.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -12,6 +13,7 @@ using X.PagedList;
 
 namespace fredperry.UI.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class CategoryController : Controller
     {

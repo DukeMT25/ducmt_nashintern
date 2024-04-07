@@ -12,7 +12,10 @@ module.exports = {
             center: true,
         },
     },
-    plugins: [require("daisyui")],
+    plugins: [
+        require("daisyui"),
+        require('@tailwindcss/aspect-ratio'),
+    ],
 
     daisyui: {
         themes: ["light", "dark", "cyberpunk"],

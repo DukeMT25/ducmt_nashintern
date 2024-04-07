@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "K8jQXciBXi4grFfdoMHLvXAdjZdwxHuYjhtsO/orF28=",
+  "Hash": "sg59UqC1mB/QvIj0aaeeIxwURhNqBxNit92V5sXP76s=",
   "Source": "fredperry.UI",
   "BasePath": "_content/fredperry.UI",
   "Mode": "Default",
@@ -1288,6 +1288,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\repos\\ducmt_nashintern\\fredperry\\wwwroot\\kisspng-the-championships-wimbledon-tennis-laurel-wreath-trousers-5b41b8cceff9d6.535942291531033804983.png",
+      "SourceId": "fredperry.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\repos\\ducmt_nashintern\\fredperry\\wwwroot\\",
+      "BasePath": "_content/fredperry.UI",
+      "RelativePath": "kisspng-the-championships-wimbledon-tennis-laurel-wreath-trousers-5b41b8cceff9d6.535942291531033804983.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\kisspng-the-championships-wimbledon-tennis-laurel-wreath-trousers-5b41b8cceff9d6.535942291531033804983.png"
     },
     {
       "Identity": "D:\\repos\\ducmt_nashintern\\fredperry\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

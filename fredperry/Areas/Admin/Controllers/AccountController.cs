@@ -1,6 +1,7 @@
 ﻿using fredperry.Core.Entities.Business;
 using fredperry.Core.Interfaces.IRepositories;
 using fredperry.Core.Interfaces.IServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -8,6 +9,7 @@ using System.Data;
 
 namespace fredperry.UI.Areas.Admin.Controllers
 {
+    [Authorize(Roles = "Admin")]
     [Area("Admin")]
     public class AccountController : Controller
     {

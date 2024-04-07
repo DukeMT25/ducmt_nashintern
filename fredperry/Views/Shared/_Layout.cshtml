@@ -8,32 +8,86 @@
     <link rel="stylesheet" href="~/css/styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header class="bg-transparent h-16 flex justify-center items-center">
-        <h1 class="text-2xl font-bold text-gray-800">Your Logo or Site Name</h1>
-            
-        <div>
-            <a class="navbar-brand" asp-area="Admin" asp-controller="Product" asp-action="Index">fredperry</a>
-            <a class="navbar-brand" asp-area="Admin" asp-controller="Category" asp-action="Index">The AREA</a>
-            <a class="navbar-brand" asp-area="Admin" asp-controller="Account" asp-action="Index">The AREA</a>
-            <br />
+    <header class="h-16 flex justify-center items-center">
+        <nav class="bg-white shadow-lg w-full relative">
+            <div class="container mx-auto px-4 flex justify-between items-center h-20">
+                <!-- Content on the left side -->
+                <div class="flex items-center space-x-4">
+                    <form asp-area="Customer" asp-controller="Men" asp-action="CateProduct" method="get">
+                        <input type="hidden" name="categoryIds" value="1" />
+                        <input type="hidden" name="categoryIds" value="3" />
+                        <button type="submit" class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">MEN 1</button>
+                    </form>
 
-            <form asp-area="Customer" asp-controller="Men" asp-action="CateProduct" method="get">
-                <input type="hidden" name="categoryIds" value="1" />
-                <input type="hidden" name="categoryIds" value="3" />
-                <button type="submit">View Products</button>
-            </form>
+                    <form asp-area="Customer" asp-controller="Men" asp-action="CateProduct" method="get">
+                        <input type="hidden" name="categoryIds" value="1" />
+                        <input type="hidden" name="categoryIds" value="4" />
+                        <button type="submit" class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">MEN 2</button>
+                    </form>
 
-            
+                    <form asp-area="Customer" asp-controller="Women" asp-action="CateProduct" method="get">
+                        <input type="hidden" name="categoryIds" value="2" />
+                        <input type="hidden" name="categoryIds" value="3" />
+                        <button type="submit" class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">WOMEN 1</button>
+                    </form>
 
 
-            <partial name="_LoginPartial" />
-        </div>
+                    <form asp-area="Customer" asp-controller="Women" asp-action="CateProduct" method="get">
+                        <input type="hidden" name="categoryIds" value="2" />
+                        <input type="hidden" name="categoryIds" value="4" />
+                        <button type="submit" class="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">WOMEN 2</button>
+                    </form>
+                </div>
+
+                <!-- Logo in the middle -->
+                <div class="absolute left-1/2 transform -translate-x-1/2">
+                    <a asp-area="" asp-controller="Home" asp-action="Index" class="flex items-center justify-center">
+                        <!-- Your logo image goes here -->
+                        <img src="~/kisspng-the-championships-wimbledon-tennis-laurel-wreath-trousers-5b41b8cceff9d6.535942291531033804983.png" alt="Logo" class="h-14 w-auto">
+                    </a>
+                </div>
+
+                <!-- Content on the right side -->
+                <div class="flex items-center space-x-4">
+                    <!-- Add your content here, such as login button -->
+                    @* <button type="button" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Login</button> *@
+                    <form method="get" asp-area="" asp-controller="Home" asp-action="Search" class="relative flex">
+                        <input name="searchTerm" id="searchInput" type="text" placeholder="Search products..." class="flex-1 mr-2 pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:border-blue-500 focus:outline-none">
+                        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Search</button>
+                        <svg class="absolute left-3 top-3 h-5 w-5 text-gray-400 hidden md:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m4-5a8 8 0 11-16 0 8 8 0 0116 0z"></path>
+                        </svg>
+                    </form>
+                    <partial name="_loginPartial" />
+                </div>
+            </div>
         
-    </header>
 
-    <div class="container mx-0 h32 flex justify-center items-center min-w-fit">
-        <h1 class="text-2xl font-bold text-gray-800">SAY SOMETHING</h1>
-    </div>
+
+                    <!-- Mobile menu button -->
+                    <div class="-mr-2 flex md:hidden">
+                        <button type="button" class="text-gray-800 hover:text-gray-900 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:bg-gray-200" aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <!-- Icon for the mobile menu button -->
+                            <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+            <!-- Mobile menu, show/hide based on menu state. -->
+            <div class="md:hidden" id="mobile-menu">
+                <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                    <a href="#" class="text-gray-800 hover:bg-gray-200 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                    <a href="#" class="text-gray-800 hover:bg-gray-200 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Shop</a>
+                    <a href="#" class="text-gray-800 hover:bg-gray-200 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                    <a href="#" class="text-gray-800 hover:bg-gray-200 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
 
     <div class="container w-full max-w-full">
         <main role="main" class="pb-3">

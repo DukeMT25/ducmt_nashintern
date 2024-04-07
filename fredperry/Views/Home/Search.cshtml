@@ -1,0 +1,20 @@
+﻿@model IEnumerable<ProductViewModel>
+
+<div class="grid grid-cols-4 gap-4 mx-5 mt-10">
+    @foreach (var product in Model)
+    {
+        <div class="card w-96 bg-base-100 shadow-xl border-2 border-accent">
+            <figure><img class=" w-60 h-auto object-cover" src="@product.PictureUrl" alt="@product.Name"></figure>
+            <div class="card-body">
+                <h2 class="card-title">@product.Name</h2>
+                <p class="text-gray-700 text-base">
+                    Code: @product.Code<br>
+                    Price: $@product.Price
+                </p>
+            </div>
+            <div class="card-actions justify-end mb-2 mr-2">
+                <a asp-action="ProductDetail" asp-route-productId="@product.Id" class="btn btn-secondary">View Details</a>
+            </div>
+        </div>
+    }
+</div>

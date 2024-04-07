@@ -2,7 +2,7 @@
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
 
-<ul class="navbar-nav">
+@* <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
     <li class="nav-item">
@@ -23,4 +23,28 @@ else
         <a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>
     </li>
 }
-</ul>
+</ul> *@
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="flex">
+        <div>
+            <a class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 rounded-md text-sm font-medium " asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity?.Name</a>
+        </div>
+        <div>
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
+                <button type="submit" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                    Logout
+                </button>
+            </form>
+        </div>
+    </div>
+}
+else
+{
+    <a asp-area="Identity" asp-page="/Account/Login"
+        class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+        Login
+    </a>
+}
+

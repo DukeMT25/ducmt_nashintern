@@ -1,5 +1,32 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Men Page";
 }
+
+    <div class="bg-fixed bg-cover bg-center h-screen" style="background-image: url('https://www.fredperry.com/media/widget/cache/F/P/7a19d1fb47d5b18d8564677610daf9cb/media/wysiwyg/2024/Q2/hp/FP-Q2-Hero-Mens-Landing-FPS-Desktop-2560x1280px-1.jpg');">
+        <!-- Content container with scrolling -->
+        <!-- Full-screen div -->
+        <div class="flex flex-col justify-between h-full">
+            <!-- Full-screen clickable area for redirection -->
+            <a href="https://www.fredperry.com" class="w-full h-full flex justify-center content-end items-center">
+                <h2 class="text-white text-lg font-semibold mt-96">MEN'S AND WOMEN's</h2>
+            </a>
+                    <h1 class=" mx-auto text-white text-2xl font-bold mb-4"> New Releases </h1   
+            <!-- Main content -->
+            <div class="flex flex-col justify-end items-center">
+                <!-- Your main content here -->
+                <!-- For example, buttons -->
+                <div class="flex">
+                    <form asp-area="Customer" asp-controller="Men" asp-action="CateProduct" method="get">
+                        <input type="hidden" name="categoryIds" value="1" />
+                        <input type="hidden" name="categoryIds" value="3" />
+                        <button type="submit" class=" bg-white text-black px-3 py-2 mr-2 mb-4 rounded-md text-xl font-bold">Shop Men1's</button>
+                    </form>
+                    <form asp-area="Customer" asp-controller="Women" asp-action="CateProduct" method="get">
+                        <input type="hidden" name="categoryIds" value="1" />
+                        <input type="hidden" name="categoryIds" value="4" />
+                        <button type="submit" class=" bg-white text-black px-3 py-2 mb-4 rounded-md text-xl font-bold">Shop Men2's</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
